@@ -19,4 +19,10 @@ stages:
       - job: job1
         steps:
           - script:
-             echo $(case)
+             echo $(production)
+  - stage: Sandbox
+    jobs:
+      - job: job2
+        steps:
+          - script:
+             echo $(Sandbox)
