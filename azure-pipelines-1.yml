@@ -15,7 +15,6 @@ stages:
   - stage: productionStage
     jobs:
       - job: job1
-        displayName: productionJob
         steps:
-          - script: |
-            echo $(case)
+          - script:
+             echo $(case)
