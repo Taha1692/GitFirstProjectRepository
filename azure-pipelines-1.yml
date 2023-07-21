@@ -1,4 +1,6 @@
 
+pool: Default
+
 variables:
   - name: case
     value: "build"
