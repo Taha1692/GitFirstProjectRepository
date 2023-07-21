@@ -10,4 +10,12 @@ parameters:
     values: 
       - production
       - Sandbox
-    
+
+stages:
+  - stage: productionStage
+    jobs:
+      - job: job1
+        displayName: productionJob
+        steps:
+          - script: |
+            echo $(case)
